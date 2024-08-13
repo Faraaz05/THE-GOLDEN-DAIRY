@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {   
+    /*About us animation*/
     const aboutItems = document.querySelectorAll('.about-item');
 
     function checkScroll() {
@@ -15,17 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', checkScroll);
     checkScroll();
 
-
+    /* About Scroll*/
     const aboutLink = document.querySelector('a[href="#about"]');
 
-    // Add click event listener
     aboutLink.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default anchor behavior
-
-        // Get the target section
+        e.preventDefault(); 
+       
         const aboutSection = document.getElementById('about');
 
-        // Scroll to the section smoothly
         aboutSection.scrollIntoView({
             behavior: 'smooth'
         });
