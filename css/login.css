@@ -11,7 +11,7 @@ body {
 .top-bar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     padding: 40px;
     padding-left: 40px;
     padding-right: 100px;
@@ -19,8 +19,8 @@ body {
 }
 
 .logo img {
-    height: 150px;
-    transform: translateX(-35px);
+    height: 180px;
+    transform: translateX(-40px);
 }
 
 .nav-buttons {
@@ -29,6 +29,7 @@ body {
 }
 
 .nav-button {
+    height: 2.7rem;
     background-color: #333; /* Black background color */
     color: white; /* White text color */
     border: 1px solid #333;
@@ -37,7 +38,8 @@ body {
     cursor: pointer;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover effect */
+    margin-top: 30px;
+    transition: background-color 0.3s, color 0.3s , border 0.3s; /* Smooth transition for hover effect */
 }
 
 .nav-button:hover {
@@ -53,6 +55,7 @@ body {
 .social p {
     text-align: center;
     font-weight: 600;
+    margin-top: 30px;
 }
 
 .social-links {
