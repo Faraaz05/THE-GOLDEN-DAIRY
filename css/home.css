@@ -142,12 +142,28 @@ footer {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #e6e6e6;
+    color: #FFFFFF;
 }
 
 .footer-section p {
     margin: 0.25rem 0;
     font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icon {
+    color: #CCCCCC;
+    font-size: 1.7rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #FFFFFF;
 }
 
 .footer-bottom {
@@ -170,5 +186,9 @@ footer {
 
     .footer-section {
         margin-bottom: 2rem;
+    }
+
+    .social-icons {
+        justify-content: center;
     }
 }
