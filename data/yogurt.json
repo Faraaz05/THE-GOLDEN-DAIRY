@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "name": "Milk",
+      "price": 20,
+      "image": "../img/milk-cans.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Milk",
+      "price": 20,
+      "image": "../img/milk-cans.jpg"
+    }  
+  ]   

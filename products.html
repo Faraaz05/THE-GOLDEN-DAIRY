@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - The Golden Dairy</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <script src="js/products.js" defer></script>
+</head>
+<body>
+    <header class="products-header">
+        <div class="left-section">
+            <a href="index.html" class="home-button">HOME</a>
+            <div class="social-icons">
+                <a href="#" class="social-icon-nav"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon-nav"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon-nav"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon-nav"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="center-section">
+            <a href="index.html"><img src="img/alt-logo.png" alt="Golden Dairy Logo" class="logo"></a>
+        </div>
+        <div class="right-section">
+            <a href="login.html" class="auth-button">Login/Sign Up</a>
+            <a href="#" class="cart-button">
+                Cart
+                <img src="img/shopping-cart.png" alt="Cart" class="cart-icon">
+            </a>
+        </div>
+    </header>
+
+    <nav class="category-nav">
+        <button class="category-button active" data-category="milk-cream">Milk & Cream</button>
+        <button class="category-button" data-category="cheese-butter">Cheese & Butter</button>
+        <button class="category-button" data-category="ice-cream">Ice Cream</button>
+        <button class="category-button" data-category="sweets">Sweets</button>
+        <button class="category-button" data-category="yogurt">Yogurt</button>
+    </nav>
+
+<!--TEMPLATE CODE-->
+    <template id="product-template">
+        <div class="product-card">
+          <img src="" alt="" class="product-image">
+          <h3 class="product-name"></h3>
+          <p class="product-price"></p>
+          <div class="product-quantity">
+            <button class="quantity-btn decrement">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn increment">+</button>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </template>
+
+
+    <main class="products-content">
+  <section id="milk-cream" class="product-category active">
+    <h2>Milk & Cream</h2>
+    <div class="product-grid" data-category="milk-cream"></div>
+  </section>
+  <section id="cheese-butter" class="product-category">
+    <h2>Cheese & Butter</h2>
+    <div class="product-grid" data-category="cheese-butter"></div>
+  </section>
+  <section id="ice-cream" class="product-category">
+    <h2>Ice Cream</h2>
+    <div class="product-grid" data-category="ice-cream"></div>
+  </section>
+  <section id="sweets" class="product-category">
+    <h2>Sweets</h2>
+    <div class="product-grid" data-category="sweets"></div>
+  </section>
+  <section id="yogurt" class="product-category">
+    <h2>Yogurt</h2>
+    <div class="product-grid" data-category="yogurt"></div>
+  </section>
+</main>
+
+    <footer>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>M-20, 2, Teen Batti Cir Rd</p>
+                    <p>Sector - 2, Talwandi, Kota</p>
+                    <p>Rajasthan 324005</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@goldendairy.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 9am - 6pm</p>
+                    <p>Sat-Sun: 10am - 4pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Golden Dairy. All rights reserved.</p>
+            </div>
+        </footer>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/product-card.js"></script>
+</body>
+</html>
