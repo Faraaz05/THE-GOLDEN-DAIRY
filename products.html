@@ -38,52 +38,32 @@
         </div>
     </header>
 
-    <nav class="category-nav">
-        <button class="category-button active" data-category="milk-cream">Milk & Cream</button>
+    <!-- In the <body> section -->
+    <template id="product-template">
+      <div class="product-card">
+        <img src="" alt="" class="product-image">
+        <h3 class="product-name"></h3>
+        <p class="product-price"></p>
+        <div class="product-quantity">
+          <button class="quantity-btn decrement">-</button>
+          <span class="quantity">1</span>
+          <button class="quantity-btn increment">+</button>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </template>
+    
+    <main class="products-content">
+      <nav class="category-nav">
+        <button class="category-button active" data-category="all">All Products</button>
+        <button class="category-button" data-category="milk-cream">Milk & Cream</button>
         <button class="category-button" data-category="cheese-butter">Cheese & Butter</button>
         <button class="category-button" data-category="ice-cream">Ice Cream</button>
         <button class="category-button" data-category="sweets">Sweets</button>
         <button class="category-button" data-category="yogurt">Yogurt</button>
-    </nav>
-
-<!--TEMPLATE CODE-->
-    <template id="product-template">
-        <div class="product-card">
-          <img src="" alt="" class="product-image">
-          <h3 class="product-name"></h3>
-          <p class="product-price"></p>
-          <div class="product-quantity">
-            <button class="quantity-btn decrement">-</button>
-            <span class="quantity">1</span>
-            <button class="quantity-btn increment">+</button>
-          </div>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-      </template>
-
-
-    <main class="products-content">
-  <section id="milk-cream" class="product-category active">
-    <h2>Milk & Cream</h2>
-    <div class="product-grid" data-category="milk-cream"></div>
-  </section>
-  <section id="cheese-butter" class="product-category">
-    <h2>Cheese & Butter</h2>
-    <div class="product-grid" data-category="cheese-butter"></div>
-  </section>
-  <section id="ice-cream" class="product-category">
-    <h2>Ice Cream</h2>
-    <div class="product-grid" data-category="ice-cream"></div>
-  </section>
-  <section id="sweets" class="product-category">
-    <h2>Sweets</h2>
-    <div class="product-grid" data-category="sweets"></div>
-  </section>
-  <section id="yogurt" class="product-category">
-    <h2>Yogurt</h2>
-    <div class="product-grid" data-category="yogurt"></div>
-  </section>
-</main>
+      </nav>
+      <div class="product-grid"></div>
+    </main>
 
     <footer>
         <footer>

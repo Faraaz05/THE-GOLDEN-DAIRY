@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function updatePrice() {
             const totalPrice = (price * quantity).toFixed(2);
-            priceElement.textContent = `$${totalPrice}`;
+            priceElement.textContent = `₹${totalPrice}`;
         }
 
         decrementBtn.addEventListener('click', () => {
