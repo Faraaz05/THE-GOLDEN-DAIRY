@@ -3,35 +3,35 @@
       "id": 1,
       "name": "Fresh Milk",
       "price": 59,
-      "image": "img/fresh-milk.jpg",
+      "image": "data/product-img/1-item.webp",
       "type": "milk-cream"
     },
     {
       "id": 2,
       "name": "Cheddar Cheese",
       "price": 89,
-      "image": "img/cheddar-cheese.jpg",
+      "image": "data/product-img/2-item.jpg",
       "type": "cheese-butter"
     },
     {
       "id": 3,
       "name": "Vanilla Ice Cream",
       "price": 79,
-      "image": "img/vanilla-ice-cream.jpg",
+      "image": "data/product-img/3-item.jpg",
       "type": "ice-cream"
     },
     {
       "id": 4,
       "name": "Chocolate Bar",
       "price": 25,
-      "image": "img/chocolate-bar.jpg",
+      "image": "data/product-img/4-item.webp",
       "type": "sweets"
     },
     {
       "id": 5,
       "name": "Greek Yogurt",
       "price": 69,
-      "image": "img/greek-yogurt.jpg",
+      "image": "data/product-img/5-item.jpg",
       "type": "yogurt"
     }
   ]

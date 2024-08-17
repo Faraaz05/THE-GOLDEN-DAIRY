@@ -1,3 +1,5 @@
+cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 document.addEventListener('DOMContentLoaded', function() {
   const productTemplate = document.getElementById('product-template');
   const productGrid = document.querySelector('.product-grid');
@@ -18,15 +20,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const image = productCard.querySelector('.product-image');
     const name = productCard.querySelector('.product-name');
     const price = productCard.querySelector('.product-price');
-
+    const quantityElement = productCard.querySelector('.quantity');
+    const addToCartBtn = productCard.querySelector('.add-to-cart');
+  
     productCard.classList.add(product.type);
     image.src = product.image;
     image.alt = product.name;
     name.textContent = product.name;
     price.textContent = `₹${product.price.toFixed(2)}`;
-
+  
     setupQuantityButtons(productCard, product.price);
-
+  
+    addToCartBtn.addEventListener('click', () => {
+           addToCart(product, parseInt(quantityElement.textContent));
+           console.log(":cloac");
+           
+            addToCartBtn.classList.add("clicked");
+            addToCartBtn.disabled = true;
+            addToCartBtn.innerHTML = 'ADDED  &check;';
+            setTimeout(function() {
+                addToCartBtn.innerHTML = 'ADD TO CART';
+                addToCartBtn.disabled = false;
+                addToCartBtn.classList.remove("clicked");
+            },1000)
+    });
+  
     return productCard;
   }
 
@@ -35,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const decrementBtn = productCard.querySelector('.decrement');
     const incrementBtn = productCard.querySelector('.increment');
     const priceElement = productCard.querySelector('.product-price');
+    
 
     let quantity = 1;
 
@@ -57,6 +76,24 @@ document.addEventListener('DOMContentLoaded', function() {
       updatePrice();
     });
   }
+
+  function addToCart(product, quantity) {
+    const existingItem = cart.find(item => item.id === product.id);
+    if (existingItem) {
+      existingItem.quantity += quantity;
+    } else {
+      cart.push({ ...product, quantity });
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartIcon();
+  }
+  
+  function updateCartIcon() {
+    const cartIcon = document.querySelector('.cart-icon');
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartIcon.setAttribute('data-count', totalItems);
+  }
+
 
   async function populateProducts() {
     const products = await fetchProducts();
@@ -87,4 +124,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   populateProducts();
+  updateCartIcon();
 });

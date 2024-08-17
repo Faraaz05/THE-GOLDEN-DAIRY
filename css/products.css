@@ -211,6 +211,26 @@ body {
     background-color: #b01d1d;
 }
 
+.add-to-cart .clicked {
+    background-color: #db3b3b;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon::after {
+    content: attr(data-count);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #b01d1d;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
