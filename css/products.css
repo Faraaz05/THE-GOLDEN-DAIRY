@@ -77,6 +77,14 @@ body {
     margin-left: 10px;
 }
 
+.cart-button .cart-count {
+    background-color: #b01d1d;
+    color: white;
+    border: none;
+    padding: 0px 5px;
+    border-radius: 100%;
+    transform: translate(-5px,-10px);
+}
 
 .category-nav {
     display: flex;
