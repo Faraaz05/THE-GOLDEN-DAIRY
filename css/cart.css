@@ -1,0 +1,103 @@
+.cart-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.right-section .shop-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    padding-top: 13px;
+}
+
+.right-section .shop-button:hover {
+    opacity: 0.8;
+} 
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fffdf8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 4px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details p {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn, .remove-btn {
+    background-color: #f5f0eb;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-btn {
+    background-color: #b01d1d;
+    color: #fff;
+}
+
+.quantity-btn {
+    margin: 0px 10px;
+}
+
+#cart-summary {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#delivery-options, #takeaway-options, #delivery-address {
+    margin-top: 2rem;
+}
+
+#place-order {
+    display: block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#place-order:hover {
+    background-color: #b01d1d;
+}
+
+iframe {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+input[type="date"], input[type="time"], textarea {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-family: 'Spartan', sans-serif;
+}
