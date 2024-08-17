@@ -1,37 +1,282 @@
 [
-    {
-      "id": 1,
-      "name": "Fresh Milk",
-      "price": 59,
-      "image": "data/product-img/1-item.webp",
-      "type": "milk-cream"
-    },
-    {
-      "id": 2,
-      "name": "Cheddar Cheese",
+  {
+    "id": 1,
+    "name": "Whole Milk (500ml)",
+    "price": 33,
+    "image": "data/product-img/1-item.jpg",
+    "type": "milk-cream"
+  },
+  {
+    "id": 2,
+    "name": "Skim Milk (500ml)",
+    "price": 30,
+    "image": "data/product-img/2-item.jpg",
+    "type": "milk-cream"
+  },
+  {
+    "id": 3,
+    "name": "Almond Milk (400ml)",
+    "price": 79,
+    "image": "data/product-img/3-item.jpg",
+    "type": "milk-cream"
+  },
+  {
+    "id": 4,
+    "name": "Oat Milk (400ml)",
+    "price": 69,
+    "image": "data/product-img/4-item.jpg",
+    "type": "milk-cream"
+  },
+  {
+    "id": 5,
+    "name": "Coconut Milk (400ml)",
+    "price": 75,
+    "image": "data/product-img/5-item.jpg",
+    "type": "milk-cream"
+  },
+  {
+    "id": 6,
+    "name": "Condensed Milk (250ml)",
+    "price": 49,
+    "image": "data/product-img/6-item.jpg",
+    "type": "milk-cream"
+  },
+  {
+      "id": 7,
+      "name": "Chocolate Milk (500ml)",
       "price": 89,
-      "image": "data/product-img/2-item.jpg",
-      "type": "cheese-butter"
-    },
-    {
-      "id": 3,
-      "name": "Vanilla Ice Cream",
+      "image": "data/product-img/7-item.jpg",
+      "type": "milk-cream"
+  },
+  {
+      "id": 8,
+      "name": "Strawberry Milk (500ml)",
+      "price": 89,
+      "image": "data/product-img/8-item.jpg",
+      "type": "milk-cream"
+  },
+  {
+      "id": 9,
+      "name": "Vanilla Milk (500ml)",
+      "price": 89,
+      "image": "data/product-img/9-item.jpg",
+      "type": "milk-cream"
+  },
+  {
+      "id": 10,
+      "name": "Heavy Cream (300gm)",
       "price": 79,
-      "image": "data/product-img/3-item.jpg",
+      "image": "data/product-img/10-item.jpg",
+      "type": "milk-cream"
+  },
+  {
+      "id": 11,
+      "name": "Light Cream (300gm)",
+      "price": 65,
+      "image": "data/product-img/11-item.jpg",
+      "type": "milk-cream"
+  },
+  {
+      "id": 12,
+      "name": "Whipped Cream (300gm)",
+      "price": 89,
+      "image": "data/product-img/12-item.jpg",
+      "type": "milk-cream"
+  },
+  {
+      "id": 13,
+      "name": "Paneer (200gm)",
+      "price": 80,
+      "image": "data/product-img/13-item.jpg",
+      "type": "cheese-butter"
+  },
+  {
+      "id": 14,
+      "name": "Cheddar Cheese (300gm)",
+      "price": 130,
+      "image": "data/product-img/14-item.jpg",
+      "type": "cheese-butter"
+  },
+  {
+      "id": 15,
+      "name": "Mozzarella Cheese (300gm)",
+      "price": 125,
+      "image": "data/product-img/15-item.jpeg",
+      "type": "cheese-butter"
+  },
+  {
+      "id": 16,
+      "name": "Processed Cheese (Slices)[200gm]",
+      "price": 149,
+      "image": "data/product-img/16-item.jpg",
+      "type": "cheese-butter"
+  },
+  {
+      "id": 17,
+      "name": "Salted Butter (200gm)",
+      "price": 59,
+      "image": "data/product-img/17-item.jpg",
+      "type": "cheese-butter"
+  },
+  {
+      "id": 18,
+      "name": "Unsalted Butter (200gm)",
+      "price": 85,
+      "image": "data/product-img/18-item.jpg",
+      "type": "cheese-butter"
+  },
+  {
+      "id": 19,
+      "name": "Clarified Butter (GHEE)[250gm]",
+      "price": 230,
+      "image": "data/product-img/19-item.jpg",
+      "type": "cheese-butter"
+  },
+  {
+      "id": 20,
+      "name": "Vanilla Ice-Cream (700ml)",
+      "price": 159,
+      "image": "data/product-img/20-item.jpg",
       "type": "ice-cream"
-    },
-    {
-      "id": 4,
-      "name": "Chocolate Bar",
-      "price": 25,
-      "image": "data/product-img/4-item.webp",
+  },
+  {
+      "id": 21,
+      "name": "Chocolate Ice-Cream (700ml)",
+      "price": 209,
+      "image": "data/product-img/21-item.jpg",
+      "type": "ice-cream"
+  },
+  {
+      "id": 22,
+      "name": "ButterScotch Ice-Cream (700ml)",
+      "price": 179,
+      "image": "data/product-img/22-item.jpg",
+      "type": "ice-cream"
+  },
+  {
+      "id": 23,
+      "name": "Creamy Kulfi Ice-Cream (700ml)",
+      "price": 195,
+      "image": "data/product-img/23-item.jpg",
+      "type": "ice-cream"
+  },
+  {
+      "id": 24,
+      "name": "Oreo Ice-Cream (700ml)",
+      "price": 189,
+      "image": "data/product-img/24-item.jpg",
+      "type": "ice-cream"
+  },
+  {
+      "id": 25,
+      "name": "Milk Cake Ice-Cream (700ml)",
+      "price": 195,
+      "image": "data/product-img/25-item.jpg",
+      "type": "ice-cream"
+  },
+  {
+      "id": 26,
+      "name": "Alphonso Mango Ice-Cream (700ml)",
+      "price": 210,
+      "image": "data/product-img/26-item.jpg",
+      "type": "ice-cream"
+  },
+  {
+      "id": 27,
+      "name": "Gulab Jamun (500gm)",
+      "price": 125,
+      "image": "data/product-img/27-item.jpg",
       "type": "sweets"
-    },
-    {
-      "id": 5,
-      "name": "Greek Yogurt",
-      "price": 69,
-      "image": "data/product-img/5-item.jpg",
+  },
+  {
+      "id": 28,
+      "name": "Jalebi (500gm)",
+      "price": 120,
+      "image": "data/product-img/28-item.jpg",
+      "type": "sweets"
+  },
+  {
+      "id": 29,
+      "name": "Rasgulla (500gm)",
+      "price": 110,
+      "image": "data/product-img/29-item.jpg",
+      "type": "sweets"
+  },
+  {
+      "id": 30,
+      "name": "Rasmalai (500gm)",
+      "price": 189,
+      "image": "data/product-img/30-item.jpg",
+      "type": "sweets"
+  },
+  {
+      "id": 31,
+      "name": "Barfi (300gm)",
+      "price": 195,
+      "image": "data/product-img/31-item.jpg",
+      "type": "sweets"
+  },
+  {
+      "id": 32,
+      "name": "Milk Peda (300gm)",
+      "price": 179,
+      "image": "data/product-img/32-item.jpg",
+      "type": "sweets"
+  },
+  {
+      "id": 33,
+      "name": "Plain Yogurt (500gm)",
+      "price": 65,
+      "image": "data/product-img/33-item.jpg",
       "type": "yogurt"
-    }
-  ]
+  },
+  {
+      "id": 34,
+      "name": "Greek Yogurt (450gm)",
+      "price": 130,
+      "image": "data/product-img/34-item.jpg",
+      "type": "yogurt"
+  },
+  {
+      "id": 35,
+      "name": "Mango Yogurt (450gm)",
+      "price": 139,
+      "image": "data/product-img/35-item.jpg",
+      "type": "yogurt"
+  },
+  {
+      "id": 36,
+      "name": "Strawberry Yogurt (450gm)",
+      "price": 139,
+      "image": "data/product-img/36-item.jpg",
+      "type": "yogurt"
+  },
+  {
+      "id": 37,
+      "name": "Mishti Doi Yogurt (450gm)",
+      "price": 120,
+      "image": "data/product-img/37-item.jpg",
+      "type": "yogurt"
+  },
+  {
+      "id": 38,
+      "name": "Kaju Katli (200gm)",
+      "price": 210,
+      "image": "data/product-img/38-item.jpg",
+      "type": "sweets"
+  },
+  {
+      "id": 39,
+      "name": "Peach Yogurt (Fruit Bottom)[200gm]",
+      "price": 170,
+      "image": "data/product-img/39-item.jpg",
+      "type": "yogurt"
+  },
+  {
+      "id": 40,
+      "name": "Set Yogurt (200gm)",
+      "price": 65,
+      "image": "data/product-img/40-item.jpg",
+      "type": "yogurt"
+  }
+]

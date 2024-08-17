@@ -96,8 +96,13 @@ body {
     transition: color 0.3s ease;
 }
 
-.category-button:hover, .category-button.active {
+.category-button:hover {
     color: #b01d1d;
+}
+
+.category-button.active {
+    color: #b01d1d;
+    text-decoration: underline;
 }
 
 .products-content {
